@@ -1,4 +1,4 @@
-import { Table, TableCaption, TableContainer, Tbody, Td, Tfoot, Th, Thead, Tr } from "@chakra-ui/react"
+import { Center, Table, TableCaption, TableContainer, Tbody, Td, Text, Tfoot, Th, Thead, Tr } from "@chakra-ui/react"
 
 export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: string; mbti: string }) {
   return (
@@ -19,36 +19,48 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
         </Thead>
         <Thead>
           <Tr>
-            <Th
-              sx={{
-                color: "red",
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                textAlign: "center",
-              }}
-            >
-              恋愛
+            <Th>
+              <Center>
+                <Text
+                  sx={{
+                    color: "red",
+                    WebkitWritingMode: "vertical-rl",
+                    writingMode: "vertical-rl",
+                    textAlign: "center",
+                  }}
+                >
+                  恋愛
+                </Text>
+              </Center>
             </Th>
-            <Th
-              sx={{
-                color: "red",
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                textAlign: "center",
-              }}
-            >
-              願事
+            <Th>
+              <Center>
+                <Text
+                  sx={{
+                    color: "red",
+                    WebkitWritingMode: "vertical-rl",
+                    writingMode: "vertical-rl",
+                    textAlign: "center",
+                  }}
+                >
+                  願事
+                </Text>
+              </Center>
             </Th>
 
-            <Th
-              sx={{
-                color: "red",
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                textAlign: "center",
-              }}
-            >
-              商売
+            <Th>
+              <Center>
+                <Text
+                  sx={{
+                    color: "red",
+                    WebkitWritingMode: "vertical-rl",
+                    writingMode: "vertical-rl",
+                    textAlign: "center",
+                  }}
+                >
+                  商売
+                </Text>
+              </Center>
             </Th>
           </Tr>
         </Thead>
@@ -56,74 +68,100 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
           <Tr>
             <Td
               sx={{
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                fontSize: "sm",
-                overflowX: "scroll",
                 height: "280px",
                 wordBreak: "break-all", // 単語を途中で区切って折り返す
                 whiteSpace: "normal",
               }}
             >
-              {unsei.恋愛.アドバイス}
+              <Text
+                sx={{
+                  WebkitWritingMode: "vertical-rl",
+                  writingMode: "vertical-rl",
+                  fontSize: "sm",
+                }}
+              >
+                {unsei.恋愛.アドバイス}
+              </Text>
             </Td>
             <Td
               sx={{
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                fontSize: "sm",
                 height: "280px",
                 wordBreak: "break-all", // 単語を途中で区切って折り返す
                 whiteSpace: "normal",
               }}
             >
-              {unsei.願い事.アドバイス}
+              <Text
+                sx={{
+                  WebkitWritingMode: "vertical-rl",
+                  writingMode: "vertical-rl",
+                  fontSize: "sm",
+                }}
+              >
+                {unsei.願い事.アドバイス}
+              </Text>
             </Td>
             <Td
               sx={{
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                fontSize: "sm",
                 height: "280px",
                 wordBreak: "break-all", // 単語を途中で区切って折り返す
                 whiteSpace: "normal",
               }}
             >
-              {unsei.商売.アドバイス}
+              <Text
+                sx={{
+                  WebkitWritingMode: "vertical-rl",
+                  writingMode: "vertical-rl",
+                  fontSize: "sm",
+                }}
+              >
+                {unsei.商売.アドバイス}
+              </Text>
             </Td>
           </Tr>
         </Tbody>
         <Thead>
           <Tr>
-            <Th
-              sx={{
-                color: "red",
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                textAlign: "center",
-              }}
-            >
-              健康
+            <Th>
+              <Center>
+                <Text
+                  sx={{
+                    color: "red",
+                    WebkitWritingMode: "vertical-rl",
+                    writingMode: "vertical-rl",
+                    textAlign: "center",
+                  }}
+                >
+                  健康
+                </Text>
+              </Center>
             </Th>
-            <Th
-              sx={{
-                color: "red",
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                textAlign: "center",
-              }}
-            >
-              失物
+            <Th>
+              <Center>
+                <Text
+                  sx={{
+                    color: "red",
+                    WebkitWritingMode: "vertical-rl",
+                    writingMode: "vertical-rl",
+                    textAlign: "center",
+                  }}
+                >
+                  失物
+                </Text>
+              </Center>
             </Th>
-            <Th
-              sx={{
-                color: "red",
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                textAlign: "center",
-              }}
-            >
-              縁談
+            <Th>
+              <Center>
+                <Text
+                  sx={{
+                    color: "red",
+                    WebkitWritingMode: "vertical-rl",
+                    writingMode: "vertical-rl",
+                    textAlign: "center",
+                  }}
+                >
+                  縁談
+                </Text>
+              </Center>
             </Th>
           </Tr>
         </Thead>
@@ -131,39 +169,54 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
           <Tr>
             <Td
               sx={{
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                fontSize: "sm",
                 height: "280px",
                 wordBreak: "break-all", // 単語を途中で区切って折り返す
                 whiteSpace: "normal",
               }}
             >
-              {unsei.健康.アドバイス}
+              <Text
+                sx={{
+                  WebkitWritingMode: "vertical-rl",
+                  writingMode: "vertical-rl",
+                  fontSize: "sm",
+                }}
+              >
+                {unsei.健康.アドバイス}
+              </Text>
             </Td>
             <Td
               sx={{
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                fontSize: "sm",
                 height: "280px",
                 wordBreak: "break-all", // 単語を途中で区切って折り返す
                 whiteSpace: "normal",
               }}
             >
-              {unsei.失物.アドバイス}
+              <Text
+                sx={{
+                  WebkitWritingMode: "vertical-rl",
+                  writingMode: "vertical-rl",
+                  fontSize: "sm",
+                }}
+              >
+                {unsei.失物.アドバイス}
+              </Text>
             </Td>
             <Td
               sx={{
-                WebkitWritingMode: "vertical-rl",
-                writingMode: "vertical-rl",
-                fontSize: "sm",
                 height: "280px",
                 wordBreak: "break-all", // 単語を途中で区切って折り返す
                 whiteSpace: "normal",
               }}
             >
-              {unsei.縁談.アドバイス}
+              <Text
+                sx={{
+                  WebkitWritingMode: "vertical-rl",
+                  writingMode: "vertical-rl",
+                  fontSize: "sm",
+                }}
+              >
+                {unsei.縁談.アドバイス}
+              </Text>
             </Td>
           </Tr>
         </Tbody>
