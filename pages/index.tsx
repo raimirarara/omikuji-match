@@ -55,7 +55,7 @@ export default function Home() {
               }}
             >
               <Stack spacing={3}>
-                <Input placeholder="名前" size="lg" value={name} onChange={(e) => setName(e.target.value)} />
+                <Input placeholder="twitterID" size="lg" value={name} onChange={(e) => setName(e.target.value)} />
                 <Select placeholder="性格タイプ" size="lg" value={myMbti} onChange={(e) => setMyMbti(e.target.value)}>
                   {mbti.map((mbti) => (
                     <option key={mbti.type} value={mbti.type}>
