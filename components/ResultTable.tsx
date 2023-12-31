@@ -22,6 +22,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             <Th
               sx={{
                 color: "red",
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 textAlign: "center",
               }}
@@ -31,6 +32,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             <Th
               sx={{
                 color: "red",
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 textAlign: "center",
               }}
@@ -41,6 +43,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             <Th
               sx={{
                 color: "red",
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 textAlign: "center",
               }}
@@ -53,6 +56,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
           <Tr>
             <Td
               sx={{
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 fontSize: "sm",
                 overflowX: "scroll",
@@ -65,6 +69,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             </Td>
             <Td
               sx={{
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 fontSize: "sm",
                 height: "280px",
@@ -76,6 +81,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             </Td>
             <Td
               sx={{
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 fontSize: "sm",
                 height: "280px",
@@ -92,6 +98,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             <Th
               sx={{
                 color: "red",
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 textAlign: "center",
               }}
@@ -101,6 +108,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             <Th
               sx={{
                 color: "red",
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 textAlign: "center",
               }}
@@ -110,6 +118,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             <Th
               sx={{
                 color: "red",
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 textAlign: "center",
               }}
@@ -122,6 +131,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
           <Tr>
             <Td
               sx={{
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 fontSize: "sm",
                 height: "280px",
@@ -133,6 +143,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             </Td>
             <Td
               sx={{
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 fontSize: "sm",
                 height: "280px",
@@ -144,6 +155,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
             </Td>
             <Td
               sx={{
+                WebkitWritingMode: "vertical-rl",
                 writingMode: "vertical-rl",
                 fontSize: "sm",
                 height: "280px",
