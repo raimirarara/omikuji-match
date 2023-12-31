@@ -36,7 +36,7 @@ export default function OmikujiId(props: Props) {
             as={TwitterIntentTweet}
             text={`${data.mbti}の${data.name}の2024年の運勢`}
             url={thisUrl}
-            hashtags={["おみくじ", "今年の運勢", "おみくじマッチ", `${data.mbti}`]}
+            hashtags={["おみくじ2024", "2024年の運勢", `${data.mbti}`]}
           >
             <svg
               viewBox="0 0 1200 1227"
