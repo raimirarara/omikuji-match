@@ -19,6 +19,15 @@ export default function OmikujiId(props: Props) {
   const thisUrl = process.env.BASE_URL + "/omikuji/" + data.omikuji_id
   return (
     <Box>
+      <head>
+        <title>今年の運勢</title>
+        <meta property="og:title" content="2024年の運勢"></meta>
+        <meta property="og:image" content="https://omikuji-match.vercel.app/api/og" />
+        <meta property="twitter:image" content="https://omikuji-match.vercel.app/api/og"></meta>
+        <meta property="twitter:card" content="summary_large_image"></meta>
+        <meta property="twitter:title" content="2024年の運勢"></meta>
+        <meta property="twitter:description" content="あなたの2024の運勢を占おう！"></meta>
+      </head>
       <ResultTable unsei={data.omikuji} name={data.name} mbti={data.mbti} />
       <Center m={8}>
         <Button as={TwitterIntentTweet} text="今年の運勢" url={thisUrl} hashtags={["おみくじ", "今年の運勢"]}>

@@ -54,7 +54,7 @@ export default function Home() {
               <Button onClick={handleClick}>おみくじをひく</Button>
             </Stack>
           </Box>
-          {!loading && (
+          {loading && (
             <Box mt={8}>
               <Center m={4}>
                 <Image src="/omikuji_shake.gif" alt="omikuji" width={250} height={250} priority />
