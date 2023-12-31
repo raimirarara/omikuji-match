@@ -15,7 +15,7 @@ export default function Home() {
   const [myMbti, setMyMbti] = useState("")
   const [unsei, setUnsei] = useState<{} | null>(null)
   const handleClick = async () => {
-    if (!name || !myMbti) return alert("名前と性格タイプをどちらも入力してください。")
+    if (!name || !myMbti) return alert("ユーザー名と性格タイプをどちらも入力してください。")
     getUnsei(name, myMbti)
   }
   return (
@@ -55,7 +55,7 @@ export default function Home() {
               }}
             >
               <Stack spacing={3}>
-                <Input placeholder="twitterID" size="lg" value={name} onChange={(e) => setName(e.target.value)} />
+                <Input placeholder="@user_name" size="lg" value={name} onChange={(e) => setName(e.target.value)} />
                 <Select placeholder="性格タイプ" size="lg" value={myMbti} onChange={(e) => setMyMbti(e.target.value)}>
                   {mbti.map((mbti) => (
                     <option key={mbti.type} value={mbti.type}>
