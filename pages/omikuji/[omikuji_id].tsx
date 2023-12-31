@@ -17,7 +17,7 @@ type Props = {
 
 export default function OmikujiId(props: Props) {
   const { data, error } = props
-  const thisUrl = process.env.BASE_URL + "/omikuji/" + data.omikuji_id
+  const thisUrl = process.env.NEXT_PUBLIC_BASE_URL + "/omikuji/" + data.omikuji_id
   return (
     <div>
       <Head>

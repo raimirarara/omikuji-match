@@ -4,7 +4,6 @@ import { useState } from "react"
 export const useOmikuji = () => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const router = useRouter()
 
   const getUnsei = async (name: string, mbti: string) => {
     try {
@@ -26,8 +25,7 @@ export const useOmikuji = () => {
       }
 
       const data = await response.json()
-      router.push(`/omikuji/${data.omikuji_id}`)
-      return data
+      window.location.href = process.env.NEXT_PUBLIC_BASE_URL + `/omikuji/${data.omikuji_id}`
     } catch (err: any) {
       setError("エラーが発生しました。もう一度お試しください。")
       throw new Error(err.message || "予期せぬエラーが発生しました")
