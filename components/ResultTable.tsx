@@ -14,6 +14,7 @@ export default function ResultTable({ unsei, name, mbti }: { unsei: any; name: s
               }}
             >
               {mbti}の{name}さんの今年の運勢は
+              <span className="text-red-500 font-bold">{unsei.今年の運勢}</span>です。
             </Td>
           </Tr>
         </Thead>
